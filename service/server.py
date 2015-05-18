@@ -10,13 +10,13 @@ def cekservice():
         print subprocess.check_output(['service', 'hhvm', 'start'])
 
     if 'apache2' not in output:
-        print("[%s]]Peringatan service apache mati!, mulai menghidupkan..." % waktu)
+        print("[%s]Peringatan service apache mati!, mulai menghidupkan..." % waktu)
         print subprocess.check_output(['service', 'apache2', 'start'])
 
     if 'mysql' not in output:
-        print("[%s]]Peringatan service mysql mati!, mulai menghidupkan..." % waktu)
+        print("[%s]Peringatan service mysql mati!, mulai menghidupkan..." % waktu)
         print subprocess.check_output(['service', 'mysql', 'start'])
 
     if 'ajenti-panel' not in output:
-        print("[%s]]Peringatan service ajenti mati)
+        print("[%s]Peringatan service ajenti mati!, mulai menghidupkan..." % waktu)
         print subprocess.check_output(['service', 'ajenti', 'start'])
