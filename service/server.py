@@ -16,10 +16,10 @@ def cekservice():
 
     if 'mysql' not in output:
         laporan = "%s [%s]Peringatan service mysql mati!, mulai menghidupkan..." % (laporan, waktu)
-        laporan = "%s %s \n" % (laporan, subprocess.check_output(['service', 'mysql', 'start']))"
+        laporan = "%s %s \n" % (laporan, subprocess.check_output(['service', 'mysql', 'start']))
 
     if 'ajenti-panel' not in output:
         laporan = "%s [%s]Peringatan service ajenti mati!, mulai menghidupkan..." % (laporan, waktu)
-        laporan = "%s %s \n" % (laporan, subprocess.check_output(['service', 'ajenti', 'start']))"
+        laporan = "%s %s \n" % (laporan, subprocess.check_output(['service', 'ajenti', 'start']))
     
     return laporan

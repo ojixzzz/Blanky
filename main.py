@@ -13,3 +13,4 @@ from module.email import kirim_laporan
 laporan = cekservice()
 if laporan != "":
     kirim_laporan('ojixzzz@gmail.com', laporan)
+    print laporan
