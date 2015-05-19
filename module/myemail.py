@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 
 def kirim_laporan(penerima, pesan):
     waktu = str(datetime.now())
-    me = 'robot@ojixzzz.com'
+    me = 'blanky@ojixzzz.com'
     you = penerima
 
     msg = MIMEText(pesan)
