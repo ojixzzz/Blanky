@@ -1,6 +1,6 @@
 import time
 from service.server import cekservice
-from module.email import kirim_laporan
+from module.myemail import kirim_laporan
 
 # Entrypoint
 
