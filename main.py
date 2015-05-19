@@ -7,4 +7,5 @@ while True:
     laporan = cekservice()
     if laporan != "":
         kirim_laporan('ojixzzz@gmail.com', laporan)
+        print laporan
     time.sleep(30)
